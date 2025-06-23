@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NavUp from "./components/NavUp";
 import NavDown from "./components/NavDown";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
           <NavUp />
         </div>
         <NavDown />
-        <h1>Halo</h1>
+        <div className="relative w-full h-[360px]">
+          <Carousel />
+        </div>
       </section>
     </main>
   );
